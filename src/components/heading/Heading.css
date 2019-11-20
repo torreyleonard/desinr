@@ -1,0 +1,16 @@
+.heading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
+	font-weight: bold;
+	font-family: 'Helvetica Neue', sans-serif;
+	color: #ff1900;
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+}
+
+.heading span {
+	overflow: hidden;
+}
