@@ -14,6 +14,7 @@ type State = {
 	width: number;
 	height: number;
 	ready: boolean;
+	showInterface: boolean;
 }
 
 class App extends Component<any, State> {
@@ -23,7 +24,8 @@ class App extends Component<any, State> {
 		this.state = {
 			width: 0,
 			height: 0,
-			ready: false
+			ready: false,
+			showInterface: false
 		}
 	}
 
@@ -54,8 +56,15 @@ class App extends Component<any, State> {
 			<div className={"app"} ref={ref => this.appContainer = ref} id={"app"}>
 				<div className={"top-row"}>
 					<Heading
+						ready={this.state.ready}
 						collapsed={false}
-						onReady={() => this.setState({ ...this.state, ready: true })}
+						onReady={() => {
+							if (!this.state.showInterface) {
+								this.setState({
+									...this.state,
+									showInterface: true })
+							}
+						}}
 					/>
 				</div>
 				<div id={""} style={{
@@ -65,7 +74,12 @@ class App extends Component<any, State> {
 				}}>
 					<CardContainer
 						ref={ref => this.cardContainer = ref}
-						ready={this.state.ready}
+						ready={this.state.showInterface}
+						onReady={() => {
+							setTimeout(() => {
+								this.setState({ ...this.state, ready: true })
+							}, 1000);
+						}}
 					/>
 				</div>
 				<div className={"bottom-row"}>
@@ -73,14 +87,14 @@ class App extends Component<any, State> {
 						icon={faTimes}
 						style={{ color: "red" }}
 						onPress={() => this.onPress("left")}
-						ready={this.state.ready}
+						ready={this.state.showInterface}
 					/>
-					<InfoButton ready={this.state.ready}/>
+					<InfoButton ready={this.state.showInterface}/>
 					<BottomButtons
 						icon={faCheck}
 						style={{ color: "green" }}
 						onPress={() => this.onPress("right")}
-						ready={this.state.ready}
+						ready={this.state.showInterface}
 					/>
 				</div>
 			</div>

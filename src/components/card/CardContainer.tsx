@@ -13,7 +13,7 @@ type State = {
 	direction: Direction;
 }
 
-class CardContainer extends Component<{ ready: boolean }, State> {
+class CardContainer extends Component<{ ready: boolean, onReady: () => void }, State> {
 
 	constructor(props: any) {
 		super(props);
@@ -51,29 +51,42 @@ class CardContainer extends Component<{ ready: boolean }, State> {
 		return pos;
 	};
 
-	render() {
-		if (this.props.ready) {
-			return (
-				<React.Fragment>
-					{ this.state.data.map((item, i) => <AnimatedCard state={this.state} item={item} key={i} pos={this.getPos(i)}/>) }
-				</React.Fragment>
-			);
-		} else {
-			return (
-				<div/>
-			);
+	private cardsReady = 0;
+
+	onCardReady = () => {
+		this.cardsReady += 1;
+		if (this.cardsReady === this.state.data.length) {
+			this.props.onReady();
 		}
+	};
+
+	render() {
+		return (
+			<React.Fragment>
+				{this.state.data.map((item, i) =>
+					<AnimatedCard
+						state={this.state}
+						item={item}
+						key={i}
+						pos={this.getPos(i)}
+						ready={this.props.ready}
+						onReady={this.onCardReady}
+					/>
+				)}
+			</React.Fragment>
+		);
 	}
 
 }
 
-function AnimatedCard({ item, pos, state }: { item: ICardData, pos: number, state: State }) {
+function AnimatedCard({ item, pos, state, ready, onReady }: { item: ICardData, pos: number, state: State, ready: boolean, onReady: () => void }) {
 
 	// Check if fading out
 	const prev = usePrevious(pos);
 	const [isFadingOut, setIsFadingOut] = useState(false);
 
 	useEffect(() => {
+		onReady();
 		if (prev === 1 && pos !== 1) {
 			setIsFadingOut(true);
 		}
@@ -81,7 +94,7 @@ function AnimatedCard({ item, pos, state }: { item: ICardData, pos: number, stat
 
 	const spring = useSpring({
 		hiddenOpacity: pos === 1 || isFadingOut || pos > 4 ? 0 : 1,
-		opacity: pos === 1 ? 1 : (pos > 3 ? 0 : 1/pos+0.5),
+		opacity: !ready ? 0 : (pos === 1 ? 1 : (pos > 3 ? 0 : 1/pos+0.5)),
 		transform: `translate(${isFadingOut ? (window.innerWidth * (state.direction === "left" ? -1 : 1)) : 0}px,
 			-${isFadingOut ? 1 : (pos === 1 ? 1 : (pos*50)-60)}px)
 			scale(${isFadingOut ? 1 : (pos === 1 ? 1 : 1/pos+0.4)})`,

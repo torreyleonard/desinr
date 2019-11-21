@@ -7,22 +7,22 @@ import "./Heading.css";
 type Props = {
 	collapsed?: boolean;
 	onReady: () => void;
+	ready: boolean;
 }
 
 const SPAN_WIDTH = 150;
 
 function Heading(props: Props) {
-	const [ startFirstAnimation, setStartFirstAnimation ] = useState(false);
 	const [ firstAnimationComplete, setFirstAnimationComplete ] = useState(false);
 	const { width, backgroundColor } = useSpring({
-		width: startFirstAnimation ? (props.collapsed ? 0 : SPAN_WIDTH) : 0,
-		backgroundColor: startFirstAnimation ? "rgba(0,0,0,0)" : "rgba(0,0,0,1)",
+		width: props.ready ? (props.collapsed ? 0 : SPAN_WIDTH) : 0,
+		backgroundColor: props.ready ? "rgba(0,0,0,0)" : "rgba(0,0,0,1)",
 		from: {
 			width: 0,
 			backgroundColor: "rgba(0,0,0,1)"
 		},
 		onRest: () => {
-			if (startFirstAnimation) {
+			if (props.ready) {
 				setFirstAnimationComplete(true);
 			}
 		}
@@ -41,9 +41,6 @@ function Heading(props: Props) {
 		}
 
 	});
-	setTimeout(() => {
-		setStartFirstAnimation(true);
-	}, 1500);
 	return (
 		<a.div className={"heading"} style={{ transform: spring.transform, height: spring.height, backgroundColor }}>
 			<a.span style={{ width }}>desinr&nbsp;</a.span>
