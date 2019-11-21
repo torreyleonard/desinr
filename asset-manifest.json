@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/desinr/static/css/main.ad99bc77.chunk.css",
+    "main.js": "/desinr/static/js/main.82ec3e13.chunk.js",
+    "main.js.map": "/desinr/static/js/main.82ec3e13.chunk.js.map",
+    "runtime-main.js": "/desinr/static/js/runtime-main.063c15ee.js",
+    "runtime-main.js.map": "/desinr/static/js/runtime-main.063c15ee.js.map",
+    "static/css/2.b0bb7f2c.chunk.css": "/desinr/static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.41a23b1f.chunk.js": "/desinr/static/js/2.41a23b1f.chunk.js",
+    "static/js/2.41a23b1f.chunk.js.map": "/desinr/static/js/2.41a23b1f.chunk.js.map",
+    "index.html": "/desinr/index.html",
+    "precache-manifest.a30db2bfd38194fc04c0a84f7737c228.js": "/desinr/precache-manifest.a30db2bfd38194fc04c0a84f7737c228.js",
+    "service-worker.js": "/desinr/service-worker.js",
+    "static/css/2.b0bb7f2c.chunk.css.map": "/desinr/static/css/2.b0bb7f2c.chunk.css.map",
+    "static/css/main.ad99bc77.chunk.css.map": "/desinr/static/css/main.ad99bc77.chunk.css.map",
+    "static/media/alexa-gif.gif": "/desinr/static/media/alexa-gif.37e9331c.gif",
+    "static/media/alexa.png": "/desinr/static/media/alexa.4a1db3f5.png",
+    "static/media/amazon-logo.png": "/desinr/static/media/amazon-logo.a760194c.png",
+    "static/media/amazon-redesign.png": "/desinr/static/media/amazon-redesign.6130e19f.png",
+    "static/media/black-and-decker.jpg": "/desinr/static/media/black-and-decker.e11ffe4a.jpg",
+    "static/media/cover.jpg": "/desinr/static/media/cover.054895ab.jpg",
+    "static/media/fox-icon.png": "/desinr/static/media/fox-icon.c0907acb.png",
+    "static/media/great-pumpkin.gif": "/desinr/static/media/great-pumpkin.43498fee.gif",
+    "static/media/lametric-time.jpg": "/desinr/static/media/lametric-time.69c6f52a.jpg",
+    "static/media/lametric.png": "/desinr/static/media/lametric.07b6637f.png",
+    "static/media/screenshot-1.png": "/desinr/static/media/screenshot-1.fd30b02a.png",
+    "static/media/screenshot-2.png": "/desinr/static/media/screenshot-2.499d5d25.png",
+    "static/media/screenshot-3.png": "/desinr/static/media/screenshot-3.3e7620b1.png",
+    "static/media/video-1.gif": "/desinr/static/media/video-1.13eac127.gif",
+    "static/media/video-2.gif": "/desinr/static/media/video-2.6ab5c509.gif",
+    "static/media/video-mapping.gif": "/desinr/static/media/video-mapping.2f54e16b.gif",
+    "static/media/video-statusbar.gif": "/desinr/static/media/video-statusbar.f92beace.gif",
+    "static/media/where-gif.gif": "/desinr/static/media/where-gif.008ea9f0.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.063c15ee.js",
+    "static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.41a23b1f.chunk.js",
+    "static/css/main.ad99bc77.chunk.css",
+    "static/js/main.82ec3e13.chunk.js"
+  ]
+}
