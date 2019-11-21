@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ICardData from "../../../interfaces/ICardData";
-import Def from "../../popovers/DefinitionPopover";
+import Def from "../../overlays/DefinitionPopover";
 import Logo from "../../../assets/img/cards/intellij/logo.png";
 import IntelliSense1 from "../../../assets/img/cards/intellij/intellisense-1.png";
 import IntelliSense2 from "../../../assets/img/cards/intellij/intellisense-2.gif";

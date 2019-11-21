@@ -18,6 +18,7 @@
 
 .stacked-card.back {
 	background-color: white;
+	font-family: 'Roboto', sans-serif;
 }
 
 .stacked-card.back .content {
@@ -63,18 +64,18 @@
 
 /*Scrollbar*/
 
-::-webkit-scrollbar {
+.stacked-card .content::-webkit-scrollbar {
 	width: 20px;
 }
 
-::-webkit-scrollbar-track {
+.stacked-card .content::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
 	border-radius: 20px;
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
 }
 
-::-webkit-scrollbar-thumb {
+.stacked-card .content::-webkit-scrollbar-thumb {
 	border-radius: 20px;
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;

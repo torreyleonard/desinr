@@ -4,6 +4,7 @@ import "./InfoButton.css";
 import { useSpring, animated as a } from "react-spring";
 import {faInfo} from "@fortawesome/free-solid-svg-icons";
 import {Modal} from "react-bootstrap";
+import InfoModal from "../overlays/InfoModal";
 
 type Props = {
 	ready: boolean;
@@ -28,7 +29,7 @@ function InfoButton(props: Props) {
 			</a.div>
 			<Modal show={showModal} onHide={() => setShowModal(false)}>
 				<Modal.Body>
-
+					<InfoModal/>
 				</Modal.Body>
 			</Modal>
 		</React.Fragment>

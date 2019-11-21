@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ICardData from "../../../interfaces/ICardData";
-import Def from "../../popovers/DefinitionPopover";
+import Def from "../../overlays/DefinitionPopover";
 import Image1 from "../../../assets/img/cards/blackdecker/image-1.jpg";
 import Top from "../../../assets/img/cards/blackdecker/top.jpg";
 import Ducts from "../../../assets/img/cards/blackdecker/ducts.jpg";

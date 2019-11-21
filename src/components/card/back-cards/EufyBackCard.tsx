@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ICardData from "../../../interfaces/ICardData";
-import Def from "../../popovers/DefinitionPopover";
+import Def from "../../overlays/DefinitionPopover";
 import RoboVac from "../../../assets/img/cards/eufy/robovac.jpg";
 import Video1 from "../../../assets/img/cards/eufy/video-1.gif";
 import App from "../../../assets/img/cards/eufy/app.png";
@@ -59,7 +59,7 @@ class EufyBackCard extends Component<ICardData & Props> {
 				</p>
 				<hr/>
 				<p>
-					The designers of the RoboVac worked closely with their mobile design team, who came up with the app as pictured below. By maintaining <Def str={DEFS[5]}>aesthetic consistency</Def> between their product lineup and mobile app, users like myself have very little difficulty when using the RoboVac. Even my dad, who often has trouble using newer technology, bought a RoboVac for my parents house. I expected him to reach out at least once with an issue, but he's had nothing of the sort.
+					The designers of the RoboVac worked closely with their mobile design team, who came up with the app as pictured below. By maintaining <Def str={DEFS[5]}>aesthetic consistency</Def> between their product lineup and mobile app, users like myself have very little difficulty when using the RoboVac. Even my dad, who often has trouble using newer technology, bought a RoboVac for my parents house. I expected him to reach out at least once with an issue, but he's had nothing of the sort. If you're looking for a robotic vacuum like this one, the Eufy RoboVac 30C is a strong buy from me.
 				</p>
 				<div className={"screenshot"}>
 					<img src={App} alt={"Eufy app"}/>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ICardData from "../../../interfaces/ICardData";
-import Def from "../../popovers/DefinitionPopover";
+import Def from "../../overlays/DefinitionPopover";
 import LaMetric from "../../../assets/img/cards/lametric/lametric.png";
 import Video1 from "../../../assets/img/cards/lametric/video-1.gif";
 import Video2 from "../../../assets/img/cards/lametric/video-2.gif";

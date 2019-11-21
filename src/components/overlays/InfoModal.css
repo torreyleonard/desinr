@@ -1,0 +1,79 @@
+.modal-body {
+	padding: 1.2rem !important;
+}
+
+.info-modal {
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+}
+
+.info-modal .heading .logo {
+	color: white !important;
+}
+
+.info-modal .inner-wrapper {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.info-modal .heading {
+	position: inherit;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.info-modal .small-heading .heading {
+	display: inline-block;
+	z-index: inherit;
+	width: auto;
+	font-size: inherit;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.info-modal .small-heading .heading .logo {
+	color: white !important;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding: 3px;
+}
+
+.info-modal .subtitle {
+	text-align: center;
+	color: rgba(0,0,0, 0.5);
+	font-size: 12px;
+}
+
+.info-modal .content {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	overflow-y: scroll;
+	padding: 15px;
+}
+
+.info-modal .content p {
+	color: rgba(0,0,0,0.7);
+}
+
+
+.info-modal .content p .muted {
+	color: rgba(0,0,0,0.3);
+}
+
+.info-modal .content p svg {
+	color: rgba(0,0,0,0.5);
+}
+
+.info-modal .bottom-row {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.info-modal .bottom-row a {
+	color: black;
+	font-size: 35px;
+}

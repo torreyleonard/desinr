@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ICardData from "../../../interfaces/ICardData";
-import Def from "../../popovers/DefinitionPopover";
+import Def from "../../overlays/DefinitionPopover";
 import Logo from "../../../assets/img/cards/mikrotik/logo.png";
 import Touchscreen from "../../../assets/img/cards/mikrotik/touchscreen.png";
 import WinBoxLogin from "../../../assets/img/cards/mikrotik/winbox-login.jpg";

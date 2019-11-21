@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ICardData from "../../../interfaces/ICardData";
-import Def from "../../popovers/DefinitionPopover";
+import Def from "../../overlays/DefinitionPopover";
 import AmazonLogo from "../../../assets/img/cards/amazon/amazon-logo.png";
 import Video1 from "../../../assets/img/cards/amazon/video-1.gif";
 import Video2 from "../../../assets/img/cards/amazon/video-2.gif";

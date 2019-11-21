@@ -2,7 +2,7 @@ html, body, #root {
 	margin: 0;
 	overflow: hidden;
 	-webkit-overflow-scrolling: touch;
-	font-family: "Helvetica Neue", sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	height: 100%;
 	width: 100%;
 	display: flex;
@@ -52,4 +52,12 @@ html, body, #root {
 	border-radius: 5px;
 	font-size: 50%;
 	color: #eeeff4;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none !important;
 }

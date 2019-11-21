@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ICardData from "../../../interfaces/ICardData";
-import Def from "../../popovers/DefinitionPopover";
+import Def from "../../overlays/DefinitionPopover";
 import App1 from "../../../assets/img/cards/robinhood/app-1.png";
 import Logo from "../../../assets/img/cards/robinhood/logo.png";
 import Ad from "../../../assets/img/cards/robinhood/ad.png";

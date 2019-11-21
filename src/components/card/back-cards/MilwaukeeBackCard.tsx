@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ICardData from "../../../interfaces/ICardData";
-import Def from "../../popovers/DefinitionPopover";
+import Def from "../../overlays/DefinitionPopover";
 import Logo from "../../../assets/img/cards/milwaukee/logo.png";
 import Base from "../../../assets/img/cards/milwaukee/base.png";
 import Stacked from "../../../assets/img/cards/milwaukee/stacked.jpg";
