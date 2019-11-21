@@ -9,6 +9,7 @@ type Props = {
 	data: ICardData;
 	style?: any;
 	childrenHiddenOpacity?: number;
+	isFadingOut?: boolean;
 }
 
 function Card(props: Props) {
@@ -21,6 +22,10 @@ function Card(props: Props) {
 		transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
 		config: { mass: 5, tension: 500, friction: 80 }
 	});
+
+	if (props.isFadingOut && flipped) {
+		set(false);
+	}
 
 	// Render
 
@@ -41,11 +46,6 @@ function Card(props: Props) {
 					transform,
 					pointerEvents: flipped ? "none" : "auto"
 				}}
-				// style={{
-				// 	opacity,
-				// 	transform: transform.interpolate((t: any) => `${t} rotateX(180deg)`),
-				// 	pointerEvents: flipped ? "none" : "auto"
-				// }}
 				hiddenOpacity={props.childrenHiddenOpacity}
 			/>
 			<BackLayout
@@ -56,11 +56,6 @@ function Card(props: Props) {
 					transform: transform.interpolate((t: any) => `${t} rotateX(180deg)`),
 					pointerEvents: flipped ? "auto" : "none"
 				}}
-				// style={{
-				// 	opacity: opacity.interpolate((o: any) => 1 - o),
-				// 	transform,
-				// 	pointerEvents: flipped ? "none" : "auto"
-				// }}
 			/>
 		</a.div>
 	);

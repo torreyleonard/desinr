@@ -27,7 +27,7 @@ class CardContainer extends Component<{ ready: boolean }, State> {
 	componentDidMount() {
 		this.setState({
 			...this.state,
-			data: CardData
+			data: CardData.sort(() => Math.random() - 0.5)
 		});
 	}
 
@@ -93,6 +93,7 @@ function AnimatedCard({ item, pos, state }: { item: ICardData, pos: number, stat
 		onRest: () => setIsFadingOut(false)
 	});
 
+
 	return (
 		<a.div style={{
 			height: "100%",
@@ -105,6 +106,7 @@ function AnimatedCard({ item, pos, state }: { item: ICardData, pos: number, stat
 			<Card
 				data={item}
 				childrenHiddenOpacity={spring.hiddenOpacity}
+				isFadingOut={isFadingOut}
 			/>
 		</a.div>
 	);

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import FoxIcon from "../../assets/img/fox-icon.png";
 import "./DefinitionPopover.css";
-import DefinitionData from "../../constants/DefinitionData";
 import {OverlayTrigger, Popover} from "react-bootstrap";
 
 type Props = {

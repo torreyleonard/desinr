@@ -4,6 +4,7 @@
 	color: #548eff;
 	cursor: pointer;
 	font-weight: bold;
+	display: inline-block;
 }
 
 .fox-icon {
