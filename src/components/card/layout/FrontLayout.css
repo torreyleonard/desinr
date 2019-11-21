@@ -1,11 +1,11 @@
-.card.front:after {
+.stacked-card.front:after {
 	background: linear-gradient(transparent, black);
 	position: absolute;
 	content: " ";
 	top: 50%; left: 0; right: 0; bottom: 0;
 }
 
-.card.front .upper-container {
+.stacked-card.front .upper-container {
 	height: 40px;
 	width: 100%;
 	z-index: 15;
@@ -21,7 +21,7 @@
 	flex-direction: row;
 }
 
-.card.front .upper-container-underlay {
+.stacked-card.front .upper-container-underlay {
 	z-index: 10;
 	position: absolute;
 	height: 50px;
@@ -34,7 +34,7 @@
 	opacity: 1;
 }
 
-.card.front .lower-container {
+.stacked-card.front .lower-container {
 	z-index: 10;
 	width: 85%;
 	height: 25%;
@@ -47,12 +47,12 @@
 	margin-right: 20px;
 }
 
-.card.front .lower-container .title {
+.stacked-card.front .lower-container .title {
 	font-weight: bold;
 	margin-bottom: 5px;
 }
 
-.card.front .lower-container .subtitle {
+.stacked-card.front .lower-container .subtitle {
 	color: #c4c5ca;
 	font-size: 12px;
 }

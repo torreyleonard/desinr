@@ -1,4 +1,4 @@
-.card {
+.stacked-card {
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -12,7 +12,7 @@
 	flex-direction: column;
 }
 
-.card .icon {
+.stacked-card .icon {
 	background-color: rgba(255,255,255,0.08);
 	display: flex;
 	align-items: center;

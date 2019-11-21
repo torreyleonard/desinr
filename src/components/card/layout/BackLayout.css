@@ -1,8 +1,8 @@
-.card.back .icon {
+.stacked-card.back .icon {
 	background-color: rgba(0, 0, 0, 0.2);
 	opacity: 0.8;
 }
 
-.card.back {
+.stacked-card.back {
 	background-color: white;
 }

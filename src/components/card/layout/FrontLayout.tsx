@@ -16,7 +16,7 @@ class FrontLayout extends Component<ICardData & Props> {
 	render() {
 		return (
 			<a.div
-				className={"card front"}
+				className={"stacked-card front"}
 				style={{
 					...this.props.style,
 					background: `url(${this.props.backgroundImage})`,

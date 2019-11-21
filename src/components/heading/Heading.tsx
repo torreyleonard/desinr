@@ -14,10 +14,12 @@ const SPAN_WIDTH = 150;
 function Heading(props: Props) {
 	const [ startFirstAnimation, setStartFirstAnimation ] = useState(false);
 	const [ firstAnimationComplete, setFirstAnimationComplete ] = useState(false);
-	const { width } = useSpring({
+	const { width, backgroundColor } = useSpring({
 		width: startFirstAnimation ? (props.collapsed ? 0 : SPAN_WIDTH) : 0,
+		backgroundColor: startFirstAnimation ? "rgba(0,0,0,0)" : "rgba(0,0,0,1)",
 		from: {
 			width: 0,
+			backgroundColor: "rgba(0,0,0,1)"
 		},
 		onRest: () => {
 			if (startFirstAnimation) {
@@ -43,7 +45,7 @@ function Heading(props: Props) {
 		setStartFirstAnimation(true);
 	}, 1500);
 	return (
-		<a.div className={"heading"} style={{ transform: spring.transform, height: spring.height }}>
+		<a.div className={"heading"} style={{ transform: spring.transform, height: spring.height, backgroundColor }}>
 			<a.span style={{ width }}>desinr&nbsp;</a.span>
 			<FontAwesomeIcon icon={faFireAlt} className={"logo"}/>
 		</a.div>

@@ -5,6 +5,18 @@ html, body, #root {
 	font-family: "Helvetica Neue", sans-serif;
 	height: 100%;
 	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+*, ::after, ::before {
+	 box-sizing: content-box !important;
+}
+
+.device-wrapper {
+	border-radius: 66px;
+	box-shadow: 0 4px 50px -20px black;
 }
 
 .app {
@@ -15,6 +27,7 @@ html, body, #root {
 	flex-direction: column;
 	height: 100%;
 	width: 100%;
+	position: relative;
 }
 
 .top-row {

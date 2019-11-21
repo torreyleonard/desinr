@@ -15,7 +15,7 @@ class BackLayout extends Component<ICardData & Props> {
 	render() {
 		return (
 			<a.div
-				className={"card back"}
+				className={"stacked-card back"}
 				style={this.props.style}
 			>
 				<div className={"icon"}  onClick={this.props.toggleFlippedState}>
