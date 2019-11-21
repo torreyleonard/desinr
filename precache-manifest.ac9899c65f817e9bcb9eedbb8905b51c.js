@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "89e34f667eb65276ad91063ff10dc67a",
+    "revision": "66bec75ebfecffe68176c0f51880ab4b",
     "url": "/desinr/index.html"
   },
   {
-    "revision": "e4535ea5b4e37b1c2c6a",
+    "revision": "5d3c2766145f6729a3ef",
     "url": "/desinr/static/css/2.b0bb7f2c.chunk.css"
   },
   {
-    "revision": "ec0a2368d5875e05a7c1",
-    "url": "/desinr/static/css/main.ad99bc77.chunk.css"
+    "revision": "98382d7114ee71c69209",
+    "url": "/desinr/static/css/main.bfd2c70d.chunk.css"
   },
   {
-    "revision": "e4535ea5b4e37b1c2c6a",
-    "url": "/desinr/static/js/2.4938c227.chunk.js"
+    "revision": "5d3c2766145f6729a3ef",
+    "url": "/desinr/static/js/2.269d1d87.chunk.js"
   },
   {
-    "revision": "ec0a2368d5875e05a7c1",
-    "url": "/desinr/static/js/main.c52197b9.chunk.js"
+    "revision": "98382d7114ee71c69209",
+    "url": "/desinr/static/js/main.6b210aff.chunk.js"
   },
   {
     "revision": "8a9d1f9ff8f6d2fdc39e",
@@ -72,6 +72,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/desinr/static/media/cover.e11ffe4a.jpg"
   },
   {
+    "revision": "89bf8991b9296fd18825659e9fb7014c",
+    "url": "/desinr/static/media/ducts.89bf8991.jpg"
+  },
+  {
     "revision": "c0907acb75cba62fda159774f60b364c",
     "url": "/desinr/static/media/fox-icon.c0907acb.png"
   },
@@ -80,8 +84,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/desinr/static/media/great-pumpkin.43498fee.gif"
   },
   {
+    "revision": "7df1cc0db9fa7307c921c563187bc9d3",
+    "url": "/desinr/static/media/image-1.7df1cc0d.jpg"
+  },
+  {
     "revision": "07b6637f8ef8580ec419297acb4c0c0e",
     "url": "/desinr/static/media/lametric.07b6637f.png"
+  },
+  {
+    "revision": "4d8faa8ebd066fadec6fd843ad5e6f91",
+    "url": "/desinr/static/media/logo.4d8faa8e.png"
   },
   {
     "revision": "fd30b02ad915e1f5e456eb65bc4e4439",
@@ -96,12 +108,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/desinr/static/media/screenshot-3.3e7620b1.png"
   },
   {
+    "revision": "d2c0db791f08ab95c97b75b3f56a84e1",
+    "url": "/desinr/static/media/top.d2c0db79.jpg"
+  },
+  {
+    "revision": "ffc9cd7ca7d8251ae6780ee200d6a423",
+    "url": "/desinr/static/media/touchscreen.ffc9cd7c.png"
+  },
+  {
+    "revision": "4973d4be99dc3cd2849fd2535056868b",
+    "url": "/desinr/static/media/ubnt-1.4973d4be.jpg"
+  },
+  {
+    "revision": "196ed226b2585ae5822a0f1beb992d91",
+    "url": "/desinr/static/media/ubnt-2.196ed226.png"
+  },
+  {
     "revision": "13eac127845fb32c17a3e24b518139e6",
     "url": "/desinr/static/media/video-1.13eac127.gif"
   },
   {
+    "revision": "8e2d1cd63b06bcb4986e0450e235d17e",
+    "url": "/desinr/static/media/video-1.8e2d1cd6.gif"
+  },
+  {
     "revision": "6ab5c50991304b484ad97e1257078499",
     "url": "/desinr/static/media/video-2.6ab5c509.gif"
+  },
+  {
+    "revision": "f2c5b59187c25bf739519417ef35892e",
+    "url": "/desinr/static/media/video-2.f2c5b591.gif"
   },
   {
     "revision": "2f54e16b1f38c34ee111f94e79068a22",
@@ -114,5 +150,13 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "008ea9f0a7b1a7ccf51400deb9a73031",
     "url": "/desinr/static/media/where-gif.008ea9f0.gif"
+  },
+  {
+    "revision": "7d60feb0053f91be79a5f36fdcad0354",
+    "url": "/desinr/static/media/winbox-login.7d60feb0.jpg"
+  },
+  {
+    "revision": "12f8aefa297924950bf5aeeb44017721",
+    "url": "/desinr/static/media/winbox.12f8aefa.png"
   }
 ]);
