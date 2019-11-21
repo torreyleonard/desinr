@@ -6,4 +6,5 @@ export default interface ICardData {
 	category: string;
 	title: string;
 	subtitle: string;
+	backCard?: any;
 }

@@ -1,10 +1,9 @@
 import React, {Component, useState, useEffect, useRef} from "react";
 import "./Card.css";
 import Card from "./Card";
-import {faMobileAlt} from "@fortawesome/free-solid-svg-icons";
 import {useSpring, animated as a} from 'react-spring';
 import ICardData from "../../interfaces/ICardData";
-import CardData from "../../enums/CardData";
+import CardData from "../../constants/CardData";
 
 type Direction = "right"|"left";
 
@@ -101,7 +100,7 @@ function AnimatedCard({ item, pos, state }: { item: ICardData, pos: number, stat
 			position: "absolute",
 			zIndex: isFadingOut ? 100 : (state.data.length - pos),
 			transform: spring.transform,
-			opacity: spring.opacity
+			opacity: spring.opacity,
 		}}>
 			<Card
 				data={item}

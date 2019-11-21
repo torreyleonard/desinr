@@ -1,0 +1,13 @@
+.definition {
+	text-decoration: underline;
+	text-decoration-color: rgba(0,0,0,0.2);
+	color: #548eff;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.fox-icon {
+	width: 20px;
+	height: 20px;
+	margin-right: 6px;
+}

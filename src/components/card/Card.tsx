@@ -30,8 +30,7 @@ function Card(props: Props) {
 				...props.style,
 				height: "100%",
 				width: "100%",
-				position: "relative",
-				pointerEvents: "none"
+				position: "relative"
 			}}
 		>
 			<FrontLayout
@@ -44,7 +43,8 @@ function Card(props: Props) {
 				// }}
 				style={{
 					opacity,
-					transform: transform.interpolate((t: any) => `${t} rotateX(180deg)`)
+					transform: transform.interpolate((t: any) => `${t} rotateX(180deg)`),
+					pointerEvents: flipped ? "none" : "auto"
 				}}
 				hiddenOpacity={props.childrenHiddenOpacity}
 			/>
@@ -58,7 +58,7 @@ function Card(props: Props) {
 				style={{
 					opacity: opacity.interpolate((o: any) => 1 - o),
 					transform,
-					pointerEvents: "none"
+					pointerEvents: flipped ? "none" : "auto"
 				}}
 			/>
 		</a.div>
