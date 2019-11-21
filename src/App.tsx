@@ -8,6 +8,7 @@ import { withOrientationChange, isMobile, isBrowser } from 'react-device-detect'
 import "./App.css";
 import "./assets/lib/devices.min.css";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import InfoButton from "./components/buttons/InfoButton";
 
 type State = {
 	width: number;
@@ -74,6 +75,7 @@ class App extends Component<any, State> {
 						onPress={() => this.onPress("left")}
 						ready={this.state.ready}
 					/>
+					<InfoButton ready={this.state.ready}/>
 					<BottomButtons
 						icon={faCheck}
 						style={{ color: "green" }}

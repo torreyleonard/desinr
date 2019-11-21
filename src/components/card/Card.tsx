@@ -36,30 +36,31 @@ function Card(props: Props) {
 			<FrontLayout
 				{...props.data}
 				toggleFlippedState={() => set(state => !state)}
-				// style={{
-				// 	opacity: opacity.interpolate((o: any) => 1 - o),
-				// 	transform,
-				// 	pointerEvents: "none"
-				// }}
-				style={{
-					opacity,
-					transform: transform.interpolate((t: any) => `${t} rotateX(180deg)`),
-					pointerEvents: flipped ? "none" : "auto"
-				}}
-				hiddenOpacity={props.childrenHiddenOpacity}
-			/>
-			<BackLayout
-				{...props.data}
-				toggleFlippedState={() => set(state => !state)}
-				// style={{
-				// 	opacity,
-				// 	transform: transform.interpolate((t: any) => `${t} rotateX(180deg)`)
-				// }}
 				style={{
 					opacity: opacity.interpolate((o: any) => 1 - o),
 					transform,
 					pointerEvents: flipped ? "none" : "auto"
 				}}
+				// style={{
+				// 	opacity,
+				// 	transform: transform.interpolate((t: any) => `${t} rotateX(180deg)`),
+				// 	pointerEvents: flipped ? "none" : "auto"
+				// }}
+				hiddenOpacity={props.childrenHiddenOpacity}
+			/>
+			<BackLayout
+				{...props.data}
+				toggleFlippedState={() => set(state => !state)}
+				style={{
+					opacity,
+					transform: transform.interpolate((t: any) => `${t} rotateX(180deg)`),
+					pointerEvents: flipped ? "auto" : "none"
+				}}
+				// style={{
+				// 	opacity: opacity.interpolate((o: any) => 1 - o),
+				// 	transform,
+				// 	pointerEvents: flipped ? "none" : "auto"
+				// }}
 			/>
 		</a.div>
 	);
