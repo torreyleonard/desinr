@@ -72,7 +72,7 @@ class AmazonBackCard extends Component<ICardData & Props> {
 					</div>
 				</div>
 				<p>
-					Hopefully you gave them a score of 0 (or 90, whatever's bad to you). Now juxtapose those screenshots with the following redesign concept found <a href="https://dribbble.com/shots/4910280-Amazon-Redesign" target="_blank">here.</a>
+					Hopefully you gave them a score of 0 (or 90, whatever's bad to you). Now juxtapose those screenshots with the following redesign concept found <a href="https://dribbble.com/shots/5805826-Amazon-Refresh-Design" target="_blank">here.</a>
 				</p>
 				<div className={"screenshot"}>
 					<img src={Redesign} alt={"Amazon redesign"}/>
