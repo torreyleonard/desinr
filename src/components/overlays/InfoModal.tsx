@@ -41,14 +41,6 @@ class InfoModal extends Component {
 						<p>
 							If you're viewing this on a desktop, you've probably noticed by now that the screen appears in an iPhone X. That's because this webapp was created originally using<a href="https://facebook.github.io/react-native/" target="_blank">&nbsp;<FontAwesomeIcon icon={faReact}/>&nbsp;React Native</a>, a framework for building mobile apps by Facebook. After considering the steps involved in making an app easily <DefinitionPopover str={"The design should be usable by as many people as possible without needing modification."}>accessible</DefinitionPopover> for grading and future use, I switched to plain old<a href="https://reactjs.org/" target="_blank">&nbsp;<FontAwesomeIcon icon={faReact}/>&nbsp;React</a>, Facebook's original <a href="https://lmgtfy.com/?q=DOM+web" target="_blank">DOM</a> framework. Animations were created using <a href="https://www.react-spring.io/" target="_blank">React Spring</a>, and icons are courtesy of <a href="https://fontawesome.com/" target="_blank"><FontAwesomeIcon icon={faFontAwesomeLogoFull}/></a>. You can view the entire repository by clicking the GitHub icon below.
 						</p>
-						{
-							// Don't display until after graded, I don't procrastinate
-							moment().isAfter(moment("2020-01-01")) && (
-								<p>
-									If you're reading this in the future and are taking COMM 3545, my best advice is to start early. Like, really. I lowkey started everything two nights before and worked on it during all of my classes the day it was due (it's a website, so if you turn it in you can still change it). Get some inspiration by Googling <a href="https://lmgtfy.com/?q=COMM+3545+design+diary" target="_blank">"COMM 3545 Design Diary"</a> and read some of those over. Oh yeah, and Quizlet. <span className={"muted"}>For those of you who understand JavaScript or TypeScript, check the source code of this paragraph.</span>
-								</p>
-							)
-						}
 					</div>
 					<div className={"bottom-row"}>
 						<a href="https://github.com/torreyleonard/desinr/" target="_blank">
